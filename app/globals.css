@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f16;
+  --card: #121825;
+  --muted: #8b98a5;
+  --accent: #3b82f6;
+  --success: #22c55e;
+  --warn: #f59e0b;
+  --danger: #ef4444;
+}
+
+html, body {
+  /* height: 100%; */
+}
+
+body {
+  color: #e5efff;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(59,130,246,0.15), transparent 50%),
+              radial-gradient(800px 400px at 90% 10%, rgba(99,102,241,0.15), transparent 40%),
+              var(--bg);
+}
+
+.card {
+  background-color: var(--card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+.scrollable::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollable::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 8px; }
+
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
