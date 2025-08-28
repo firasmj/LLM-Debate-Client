@@ -1,10 +1,16 @@
 # Next.js LLM Debate Console
 
+> ⚡ This is the frontend for the [LLM Debate Spring Boot Backend (DuetLLM)](https://github.com/firasmj/DuetLLM).
+
 A professional, real-time split-screen viewer for a two-LLM debate (GPT vs Gemini) with a judge synthesis panel. Connects to a Spring Boot backend that exposes:
 
 - `POST /api/debate/stream` → `{ ok, requestId }`
 - STOMP over SockJS at `/ws`
 - Topic subscription: `/topic/stream/{requestId}`
+
+## Related Repositories
+
+- [LLM Debate Spring Boot Backend (DuetLLM)](https://github.com/firasmj/DuetLLM)
 
 ## Quick start
 
